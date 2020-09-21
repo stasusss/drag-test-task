@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+}
+
+.container {
+  width: 1000px;
+  height: 500px;
+  margin: 100px auto;
+  background-color: rgb(77, 168, 77);
+  border-radius: 10px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-zone {
+  position: relative;
+  top: 100px;
+  height: 300px;
+  width: 150px;
+  background-color: rgb(193, 229, 190);
+}
+
+.right-zone {
+  position: relative;
+  top: 100px;
+  right: 0;
+  height: 300px;
+  width: 150px;
+  background-color: rgb(193, 229, 190);
+}
