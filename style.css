@@ -12,6 +12,9 @@
   text-align: center;
   align-items: center;
   position: absolute;
+  z-index: 1000;
+  right: 500px;
+  top: 400px;
 }
 
 .container {
@@ -33,6 +36,37 @@
   height: 300px;
   width: 150px;
   background-color: rgb(193, 229, 190);
+}
+
+.round {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(77, 168, 77);
+  position: relative;
+  top: 150px;
+  border: 10px solid rgb(193, 229, 190);
+}
+
+.round::after {
+  content: '';
+  position: absolute;
+  height: 500px;
+  width: 10px;
+  background-color: rgb(193, 229, 190);
+  left: 47%;
+  top: -160px;
+}
+
+.round::before {
+  content: '';
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(193, 229, 190);
+  border-radius: 50%;
+  top: 40%;
+  left: 39%;
 }
 
 .right-zone {
